@@ -1,0 +1,789 @@
+@charset "utf-8";
+body{font-size:9pt; color:#393939; margin:auto;}
+form{padding-bottom:20px;margin:15px;}
+img{border:0px;}
+a img{border:0px;}
+table{border-collapse:collapse;}
+a{outline:none;}
+a:link{color: #0466cb; text-decoration: none;}
+a:visited {color: #0466cb; text-decoration: none}
+a:hover {color: #0466cb; text-decoration: none}
+a:active {color: #0466cb; text-decoration: none}
+
+A.A1:link { COLOR: #207BD6 !important; TEXT-DECORATION: underline;}
+A.A1:visited { COLOR: #207BD6 !important; TEXT-DECORATION: underline}
+A.A1:active  { COLOR: #124164; TEXT-DECORATION: underline}
+A.A1:hover   { COLOR: #124164; TEXT-DECORATION: underline}
+
+A.orgAdd:link, A.orgAdd:visited{
+   color:#207BD6;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px 0px;
+}
+A.orgAdd:hover, A.orgAdd:active{
+   color:#207BD6;
+   text-decoration: underline;
+}
+
+A.orgClear:link, A.orgClear:visited{
+   color:#9AA9B8;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px -60px;
+   margin-left:5px;
+}
+A.orgClear:hover, A.orgClear:active{
+   color:#207BD6;
+   background-position:0px -40px;
+   text-decoration: underline;
+}
+
+a.addfile {
+   display:inline-block;
+   position:relative;
+   color:#207BD6;
+   text-decoration:none;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px 4px;
+}
+a.addfile:hover {
+   color:#9AA9B8;
+   text-decoration:underline;
+   background-position:0px -16px;
+}
+input.addfile {
+   cursor:pointer;
+   left:-5px;
+   opacity:0;
+   filter:alpha(opacity=0);
+   position:absolute;
+   width:1px;
+}
+a.selfile:link, a.selfile:visited {
+   color:#207BD6;
+   text-decoration:none;
+}
+a.selfile:hover, a.selfile:active {
+   color:#9AA9B8;
+   text-decoration:underline;
+}
+
+a.addimage {
+   display:inline-block;
+   position:relative;
+   color:#207BD6;
+   text-decoration:none;
+   padding-left:12px;
+   background:url("../images/org_select.png") no-repeat;
+   background-position:0px 4px;
+}
+a.addimage:hover {
+   color:#9AA9B8;
+   text-decoration:underline;
+   background-position:0px -16px;
+}
+a.dropdown:link,
+a.dropdown:hover,
+a.dropdown:active,
+a.dropdown:visited {
+   padding-left:10px;
+   display:inline-block;
+   height:25px;
+   line-height:25px;
+   color:#373737;
+   text-align:center;
+   text-decoration:none;
+   background:url("../images/btn_dropdown_l.png") left top no-repeat;
+}
+a.dropdown:hover{
+   text-decoration:none;
+}
+
+a.dropdown span{
+	display:inline-block;
+	margin:0px;
+	padding:0 15px 0 0;
+	white-space:nowrap;
+	height:25px;
+	background:url("../images/btn_dropdown_r.png") right top no-repeat;
+	cursor:pointer;
+}
+a.ToolBtn{
+   display:inline-block;
+   padding-left:5px;
+   text-decoration:none;
+   background:url("../images/tool_btn.png") left 0px no-repeat;
+}
+a.ToolBtn span{
+   display:inline-block;
+   padding:0px 13px 0px 8px;
+   height:25px;
+   line-height:25px;
+   color:#373737 !important;
+   background:url("../images/tool_btn.png") right -50px no-repeat;
+   cursor:pointer;
+}
+a.ToolBtn:hover,
+a.ToolBtn-active{
+   background-position:left -25px;
+}
+a.ToolBtn:hover span,
+a.ToolBtn-active span{
+   color:#fff !important;
+   background-position:right -75px;
+}
+
+a.ToolBtn2{
+   display:inline-block;
+   padding-left:5px;
+   text-decoration:none !important;
+   background:url("../images/tool_btn.png") left 0px no-repeat;
+}
+a.ToolBtn2 span{
+   display:inline-block;
+   padding:0px 13px 0px 8px;
+   height:25px;
+   line-height:25px;
+   color:#36434E !important;
+   background:url("../images/tool_btn.png") right -50px no-repeat;
+   cursor:pointer;
+   overflow:hidden;
+}
+a.ToolBtn2:hover{
+   background-position:left -25px;
+}
+a.ToolBtn2:hover span{
+   color:#fff !important;
+   font-weight:bold;
+   background-position:right -75px;
+}
+
+a.BigBtn{
+   display:inline-block;
+   padding-left:10px;
+   text-decoration:none;
+   background:url("../images/big_btn.png") left 0px no-repeat;
+}
+a.BigBtn span{
+   display:inline-block;
+   padding:0px 18px 0px 5px;
+   height:25px;
+   line-height:25px;
+   color:#373737 !important;
+   background:url("../images/big_btn.png") right -60px no-repeat;
+   cursor:pointer;
+}
+a.BigBtn:hover{
+   background-position:left -30px;
+}
+a.BigBtn:hover span{
+   color:#373737 !important;
+   background-position:right -90px;
+}
+
+
+.loading{
+   background:url('../images/loading.gif') top center no-repeat;
+   margin-top:10px;
+   padding-top:50px;
+   text-align:center;
+}
+.loading_16{
+   background:url('../images/loading_16.gif') top center no-repeat;
+   margin-top:10px;
+   padding-top:25px;
+   text-align:center;
+}
+.loading_gray_16{
+   background:url('../images/loading_gray_16.gif') top center no-repeat;
+   margin-top:10px;
+   padding-top:25px;
+   text-align:center;
+}
+
+.bodycolor { BACKGROUND: #f6f7f9;}
+.loginbodycolor { BACKGROUND: #6BA2D8;}
+.topbar {font-size: 9pt;BACKGROUND: #C4D9EF;background-image: url("../images/topbar.gif")}
+.topbar2 {font-size: 9pt;BACKGROUND: #C4D9EF; background-image: url("../images/menubg.gif")}
+
+.panel{ BACKGROUND: #C4D9EF; COLOR:#654125;}
+.timebar{ BACKGROUND: #CEDFF1;}
+.menu_tr1{ font-size: 9pt;COLOR:#000000;background-image:url("../images/topbar.gif");cursor:pointer}
+.menu_tr2{ font-size: 9pt;COLOR:#000000;BACKGROUND: #CEDFF1;cursor:pointer}
+
+.small  { font-size: 9pt; margin-top:10px;}
+.small1  { font-size: 9pt;COLOR: #000000;}
+.big { font-size: 12pt;}
+.big1   { font-size: 12pt;COLOR: #000000;}
+.big2   { font-size: 18pt}
+.big3   { font-size: 12pt;COLOR: #124164;FONT-WEIGHT: bold;}
+.big4   { COLOR: #FF0000;}
+.verybig{ font-size: 24pt}
+
+.ArrowButtonL{width:20px;height:16px;background: url('../images/pagebar_bg.png') -5px -38px no-repeat;}
+.ArrowButtonR{width:20px;height:16px;background: url('../images/pagebar_bg.png') -5px -158px no-repeat;}
+.ArrowButtonLL{width:20px;height:16px;background: url('../images/pagebar_bg.png') -5px -308px no-repeat;}
+.ArrowButtonRR{width:20px;height:16px;background: url('../images/pagebar_bg.png') -5px -338px no-repeat;}
+
+input.SmallButton, input.ArrowButton {FONT-SIZE: 9pt;height: 20px; text-decoration: none;  border: 1px solid #6E91C7; background: #F4FBE1 url('../images/button_bg.gif');}
+input.SmallButton:hover, input.ArrowButton:hover {FONT-SIZE: 9pt;color: #395500; background: #F4FADF url('../images/bg_input_btn_hover.png'); border: 1px solid #80AA00; border-top: 1px solid #99CC00; border-left: 1px solid #99CC00;}
+
+input.BigButton {FONT-SIZE: 12pt; margin: 1px; height: 24px; text-decoration: none;  border: 1px solid #6E91C7; background: #F4FBE1 url('../images/button_bg.gif');}
+input.BigButton:hover {FONT-SIZE: 12pt;color: #395500; background: #F4FADF url('../images/bg_input_btn_hover.png'); border: 1px solid #80AA00; border-top: 1px solid #99CC00; border-left: 1px solid #99CC00;}
+
+input.SmallButtonAHover{width:50px;height:21px;color:#000000;background:url("../images/btn_a.png") no-repeat;border:0px;cursor:pointer;background-position:0 -21px;}
+input.SmallButtonA{width:50px;height:21px;color:#36434E;background:url("../images/btn_a.png") no-repeat;border:0px;cursor:pointer;}
+input.SmallButtonA:hover{background-position:0 -21px;}
+
+input.SmallButtonBHover{width:74px;height:21px;color:#000000;background:url("../images/btn_b.png") no-repeat;border:0px;cursor:pointer;background-position:0 -21px;}
+input.SmallButtonB{width:74px;height:21px;color:#36434E;background:url("../images/btn_b.png") no-repeat;border:0px;cursor:pointer;}
+input.SmallButtonB:hover{background-position:0 -21px;}
+
+input.SmallButtonCHover{width:105px;height:21px;color:#000000;background:url("../images/btn_c.png") no-repeat;border:0px;cursor:pointer;background-position:0 -21px;}
+input.SmallButtonC{width:105px;height:21px;color:#36434E;background:url("../images/btn_c.png") no-repeat;border:0px;cursor:pointer;}
+input.SmallButtonC:hover{background-position:0 -21px;}
+
+input.SmallButtonDHover{width:160px;height:21px;color:#000000;background:url("../images/btn_d.png") no-repeat;border:0px;cursor:pointer;background-position:0 -21px;}
+input.SmallButtonD{width:160px;height:21px;color:#36434E;background:url("../images/btn_d.png") no-repeat;border:0px;cursor:pointer;}
+input.SmallButtonD:hover{background-position:0 -21px;}
+
+input.SmallButtonEHover{width:245px;height:21px;color:#000000;background:url("../images/btn_e.png") no-repeat;border:0px;cursor:pointer;background-position:0 -21px;}
+input.SmallButtonE{width:245px;height:21px;color:#36434E;background:url("../images/btn_e.png") no-repeat;border:0px;cursor:pointer;}
+input.SmallButtonE:hover{background-position:0 -21px;}
+
+input.BigButtonAHover{width:60px;height:30px;height:27px !important;padding-bottom:3px;color:#000000;background:url("../images/big_btn_a.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;background-position:0 -30px;}
+input.BigButtonA{width:60px;height:30px;height:27px !important;padding-bottom:3px;color:#36434E;background:url("../images/big_btn_a.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;}
+input.BigButtonA:hover{background-position:0 -30px;}
+
+input.BigButtonBHover{width:84px;height:30px;height:27px !important;padding-bottom:3px;color:#000000;background:url("../images/big_btn_b.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;background-position:0 -30px;}
+input.BigButtonB{width:84px;height:30px;height:27px !important;padding-bottom:3px;color:#36434E;background:url("../images/big_btn_b.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;}
+input.BigButtonB:hover{background-position:0 -30px;}
+
+input.BigButtonCHover{width:125px;height:30px;height:27px !important;padding-bottom:3px;color:#000000;background:url("../images/big_btn_c.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;background-position:0 -30px;}
+input.BigButtonC{width:125px;height:30px;height:27px !important;padding-bottom:3px;color:#36434E;background:url("../images/big_btn_c.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;}
+input.BigButtonC:hover{background-position:0 -30px;}
+
+input.BigButtonDHover{width:195px;height:30px;height:27px !important;padding-bottom:3px;color:#000000;background:url("../images/big_btn_d.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;background-position:0 -30px;}
+input.BigButtonD{width:195px;height:30px;height:27px !important;padding-bottom:3px;color:#36434E;background:url("../images/big_btn_d.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;}
+input.BigButtonD:hover{background-position:0 -30px;}
+
+input.BigButtonEHover{width:305px;height:30px;height:27px !important;padding-bottom:3px;color:#000000;background:url("../images/big_btn_e.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;background-position:0 -30px;}
+input.BigButtonE{width:305px;height:30px;height:27px !important;padding-bottom:3px;color:#36434E;background:url("../images/big_btn_e.png") no-repeat;border:0px;cursor:pointer;font-size:12pt;}
+input.BigButtonE:hover{background-position:0 -30px;}
+input.BigInput{ height:23px; line-height:23px;}
+input.BigInput,textarea.BigInput {font-size: 12pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; background-position:0 -1px;}
+input.BigInput:hover,textarea.BigInput:hover {font-size: 12pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
+
+input.SmallInput,textarea.SmallInput {font-size: 9pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; background-position:0 -1px;}
+input.SmallInput:hover,textarea.SmallInput:hover {font-size: 9pt;border: 1px solid #99CC00; background: white url('../images/bg_input_text_hover.png') top left repeat-x;}
+
+input.BigInputMoney{COLOR:#006; BACKGROUND: #F8F8F8; text-align: RIGHT; border:solid 1px black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+
+input.BigStatic,textarea.BigStatic {font-size: 10pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: #E0E0E0;}
+
+input.SmallStatic,textarea.SmallStatic {font-size: 9pt;padding: 1px 5px;  border: 1px solid #C0BBB4; background: #E0E0E0;}
+
+select.BigSelect  { COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+select.BigSelect:hover  { COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text_hover.png') top left repeat-x; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+
+select.SmallSelect{ COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text.png') top left repeat-x; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+select.SmallSelect:hover{ COLOR: #000066;  border: 1px solid #C0BBB4; background: white url('../images/bg_input_text_hover.png') top left repeat-x; BORDER-BOTTOM:1px double; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+select.BigStatic  { COLOR: #000066; BACKGROUND: #E0E0E0; border:solid 1px black; BORDER-BOTTOM:1px double; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal}
+select.SmallStatic{ COLOR: #000066; BACKGROUND: #E0E0E0; border:solid 1px black; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+.TableControl{ background: #e7f0fb}
+.TableHeader { COLOR:#fff; FONT-WEIGHT: bold; FONT-SIZE: 9pt; background:#5d99da; line-height:21px;}
+.TableContent{ BACKGROUND: #f2f8ff;}
+.TableData   { BACKGROUND: #FFFFFF;COLOR:#000000;}
+.TableLine1  { BACKGROUND: #F3F3F3;}
+.TableLine2  { BACKGROUND: #FFFFFF;}
+.TableRed{background:#f2f8ff;}
+.TextColor1  { COLOR: #FF6600;}
+.TextColor2  { COLOR: #FF0000;}
+.TextColor3  { COLOR: #808080;}
+.top{ COLOR: #FF0000;font-weight:bold;}
+
+.TableHeader a:link,
+.TableHeader a:hover,
+.TableHeader a:active,
+.TableHeader a:visited {
+   color:#fff;
+}
+
+.TableCorner a:link,
+.TableCorner a:hover,
+.TableCorner a:active,
+.TableCorner a:visited {
+   color:#fff;
+   font-weight:bold;
+}
+
+.TableControl a:link,
+.TableControl a:hover,
+.TableControl a:active,
+.TableControl a:visited,
+.TableFooter a:link,
+.TableFooter a:hover,
+.TableFooter a:active,
+.TableFooter a:visited {
+   color:#383838;
+}
+
+.percent { height: 12px; border: 1px solid #666666; float: left; padding: 0px;margin-top:3px;}
+.percent div {height: 8px;font-size: 0px;margin: 1px;float:left;background-color:#00FF40;}
+.percenttxt {float:left;font-size: 9pt;margin-top:1px;}
+.s_on{background:url(../images/topmenubg2.gif);font-size: 9pt;}
+.s_of{background:url(../images/topmenubg1.gif);font-size: 9pt;}
+.m_on{background:url(../images/topmenubg2.gif);font-size: 9pt;}
+.border14-1 {border: solid 1px #2E2E5A;font-size: 14px;}/* 表格外框 */
+.border14-2 {border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #2E2E5A;border-right-width: 1px;border-right-style: solid;border-right-color: #2E2E5A;font-size: 14px;}/* 表格边框右面 */
+.border14-3 {border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #98BBD6;font-size: 14px;border-top-style: none;border-right-style: none;border-left-style: none;}/* 表格边框底面 */
+.border14-4 {border-right-width: 1px;border-right-style: solid;border-right-color: #98BBD6;font-size: 14px;}/* 表格边框左面 */
+.title_text {  font-size: 14px; font-weight: bold; color: #0A5FA2; }
+.table_border {  border-color: #98BBD6 #98BBD6 black; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 1px}
+.table_bg {  background-attachment: fixed; background-image: url("../images/bg_header.png"); background-repeat: repeat; background-position: left; border-color: #2E2E5A black; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 0px; border-left-width: 1px}
+.table_left {  background-attachment: fixed; background-image: url(table_left.gif); background-repeat: no-repeat; background-position: left}
+
+.attach_name:link,.attach_name:hover,.attach_name:active,.attach_name:visited{color:#0D3A73;}
+.attach_div{display:none;width:110px;border:#cccccc 1px solid;position:absolute;padding:0px;z-index:10001;background:#FFFFFF;}
+.attach_div a{display:block !important;padding:0px 10px;height:25px;line-height:25px;text-decoration:none;color:#393939;}
+.attach_div a:hover{background:#5d99da;color:#fff;text-decoration:none;}
+.attach_div img.ImgHover{border:1px #98BBD6 solid;cursor:pointer;}
+.attach_div img.ImgNormal{border:1px #fff solid;cursor:pointer;}
+
+.PageHeader{
+   height:32px !important;
+   height:79px;
+   padding-top:47px;
+   color:#666666;
+}
+.PageHeader .title{
+   float:left;
+   margin-top:8px;
+   margin-right:20px;
+   font-size:14px;
+   font-weight:bold;
+}
+.PageHeader .header-left{
+   float:left;
+}
+.PageHeader .header-right{
+   float:right;
+}
+
+.BlockTop{
+   border:0px;
+   font-size:12px;
+}
+.BlockTop td{
+   height:32px;
+   font-weight:bold;
+   text-align:center;
+   color:#fff;
+   background:url('../images/block_top_bg.png') 0px -32px no-repeat;
+}
+.BlockTop td.left{
+   width:5px;
+   background-position:left 0px
+}
+.BlockTop td.center{
+   background-position:0px -32px;
+   background-repeat:repeat-x;
+}
+.BlockTop td.right{
+   width:5px;
+   background-position:right -64px;
+}
+
+.BlockTopInactive{
+   border:0px;
+   font-size:12px;
+}
+.BlockTopInactive td{
+   height:32px;
+   font-weight:bold;
+   text-align:center;
+   color:#fff;
+   background:url('../images/block_top_inactive_bg.png') 0px -32px no-repeat;
+}
+.BlockTopInactive td.left{
+   width:5px;
+   background-position:left 0px
+}
+.BlockTopInactive td.center{
+   background-position:0px -32px;
+   background-repeat:repeat-x;
+}
+.BlockTopInactive td.right{
+   width:5px;
+   background-position:right -64px;
+}
+
+.BlockBottom{
+   border:0px;
+   font-size:12px;
+}
+.BlockBottom td{
+   height:32px;
+   font-weight:bold;
+   text-align:center;
+   color:#fff;
+   background:url('../images/block_bottom_bg.png') 0px -32px no-repeat;
+}
+.BlockBottom td.left{
+   width:5px;
+   background-position:left 0px
+}
+.BlockBottom td.center{
+   background-position:0px -32px;
+   background-repeat:repeat-x;
+}
+.BlockBottom td.right{
+   width:5px;
+   background-position:right -64px;
+}
+
+.BlockBottomInactive{
+   border:0px;
+   font-size:12px;
+}
+.BlockBottomInactive td{
+   height:32px;
+   font-weight:bold;
+   text-align:center;
+   color:#fff;
+   background:url('../images/block_bottom_inactive_bg.png') 0px -32px no-repeat;
+}
+.BlockBottomInactive td.left{
+   width:5px;
+   background-position:left 0px
+}
+.BlockBottomInactive td.center{
+   background-position:0px -32px;
+   background-repeat:repeat-x;
+}
+.BlockBottomInactive td.right{
+   width:5px;
+   background-position:right -64px;
+}
+
+.BlockTop2{
+   width:100%;
+   height:5px;
+   border:0px;
+   overflow-y:hidden;
+}
+.BlockTop2 td{
+   font-size:1px;
+   background:url('../images/block_top2_bg.png') 0px -5px no-repeat;
+}
+.BlockTop2 td.left{
+   width:5px;
+   background-position:left 0px
+}
+.BlockTop2 td.center{
+   background-position:left -5px;
+   background-repeat:repeat-x;
+}
+.BlockTop2 td.right{
+   width:5px;
+   background-position:right -10px;
+}
+
+.BlockBottom2{
+   width:100%;
+   height:5px;
+   border:0px;
+   overflow-y:hidden;
+}
+.BlockBottom2 td{
+   font-size:1px;
+   background:url('../images/block_top2_bg.png') 0px -20px no-repeat;
+}
+.BlockBottom2 td.left{
+   width:5px;
+   background-position:left -15px
+}
+.BlockBottom2 td.center{
+   background-position:left -20px;
+   background-repeat:repeat-x;
+}
+.BlockBottom2 td.right{
+   width:5px;
+   background-position:right -25px;
+}
+
+.TableTop{
+   border:0px;
+   font-size:12px;
+}
+.TableTop td{
+   height:32px;
+   font-weight:bold;
+   color:#fff;
+   background:url('../images/table_top_bg.png') 0px -32px no-repeat;
+}
+.TableTop td.left{
+   width:5px !important;
+   background-position:left 0px;
+}
+.TableTop td.center{
+   background-position:0px -32px;
+   background-repeat:repeat-x;
+   text-align:center;
+}
+.TableTop td.right{
+   width:5px !important;
+   background-position:right -64px;
+}
+
+/*  列表型表格样式  */
+.TableList{
+   border:1px #4686c6 solid;
+   line-height:21px;
+   font-size:9pt;
+   border-collapse:collapse;
+   padding:3px;
+}
+.TableList td{
+   padding:3px;
+   height:30px;
+}
+.TableList .TableHeader td,
+.TableList td.TableHeader{
+   height:30px !important;
+   height:32px;
+   background:#5d99da;
+   border-bottom:1px #4686c6 solid;
+   border-right:1px #4686c6 solid;
+   font-weight:bold;
+   text-align:center;
+   color:#fff;
+   padding:0px;
+}
+.TableList .TableHeader td.TableCorner{
+   background:#5d99da;
+}
+.TableList .TableLine1 td,
+.TableList td.TableLine1{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+}
+.TableList .TableLine2 td,
+.TableList td.TableLine2{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+}
+.TableList .TableData td,
+.TableList td.TableData{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+}
+.TableList .TableContent td,
+.TableList td.TableContent{
+   background:#f2f8ff;
+   border-bottom:1px #cfcfcf solid;
+}
+.TableList .TableFooter td,
+.TableList .TableControl td,
+.TableList td.TableFooter,
+.TableList td.TableControl{
+   background: #e7f0fb;
+   border:1px #cecece solid;
+}
+.TableList .TableRed td,
+.TableList td.TableRed
+{
+   background:#f2f8ff;
+}
+.TableList .TextColor1 td,
+.TableList td.TextColor1
+{
+   COLOR: #FF6600;
+}
+.TableList .TextColor2 td,
+.TableList td.TextColor2
+{
+   COLOR: #FF0000;
+}
+
+.TableList .TableLeft td,
+.TableList td.TableLeft{
+   background:#f2f8ff;
+   border-bottom:1px #a7bd74 solid;
+}
+
+.TableList .TableRowHover td,
+.TableList td.TableRowHover
+{
+   background:#f2f8ff;
+}
+
+.TableList .TableRowActive td,
+.TableList td.TableRowActive
+{
+   background:#e5e5e5;
+}
+
+/*  block型表格样式  */
+.TableBlock{
+   border:1px #4686c6 solid;
+   line-height:20px;
+   font-size:9pt;
+   border-collapse:collapse;
+}
+.TableBlock td{
+   padding:3px;
+   height:30px;
+}
+.TableBlock .TableHeader td,
+.TableBlock td.TableHeader{
+   height:30px !important;
+   height:32px;
+   background:#5d99da;
+   border:1px #4686c6 solid;
+   font-weight:bold;
+   color:#fff;
+   line-height:23px;
+   padding:0px;
+   padding-left:5px;
+}
+.TableBlock .TableHeader td.TableCorner{
+   background:#5d99da;
+   color:#fff;
+   font-weight:bold;
+}
+.TableBlock .TableLine1 td,
+.TableBlock td.TableLine1{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+   border-right:1px #cccccc solid;
+}
+.TableBlock .TableLine2 td,
+.TableBlock td.TableLine2{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+   border-right:1px #cccccc solid;
+}
+.TableBlock .TableData td,
+.TableBlock td.TableData{
+   background:#FFFFFF;
+   border-bottom:1px #cccccc solid;
+   border-right:1px #cccccc solid;
+}
+.TableBlock .TableContent td,
+.TableBlock td.TableContent{
+   background:#f2f8ff;
+   border-bottom:1px #cccccc solid;
+   border-right:1px #cccccc solid;
+}
+.TableBlock .TableFooter td,
+.TableBlock .TableControl td,
+.TableBlock td.TableFooter,
+.TableBlock td.TableControl{
+   background: #e7f0fb;
+   border:1px #cecece solid;
+}
+.TableBlock .TableRed td,
+.TableBlock td.TableRed
+{
+   background:#f2f8ff;
+}
+
+.TableBlock .TableLeft td,
+.TableBlock td.TableLeft{
+   background:#f2f8ff;
+   border-bottom:1px #a7bd74 solid;
+}
+
+.Content{
+   line-height:normal;
+   word-wrap:break-word;
+   word-break:break-all;  
+}
+
+.TableBlock .TableRowHover td,
+.TableBlock td.TableRowHover
+{
+   background:#f2f8ff;
+}
+
+.TableBlock .TableRowActive td,
+.TableBlock td.TableRowActive
+{
+   background:#e5e5e5;
+}
+
+.no-left-border{
+   border-left:0px !important;
+}
+.no-top-border{
+   border-top:0px !important;
+}
+.no-right-border{
+   border-right:0px !important;
+}
+.no-bottom-border{
+   border-bottom:0px !important;
+}
+#navPanel{
+	width: 100%;
+	height: 28px !important;
+	height: 30px;
+	padding-top:2px;
+	font-size:10pt;
+	background: #D6E4EF url('../images/menu_top_bg.png') left -30px repeat-x;
+}
+#navMenu{
+	float: left;
+	white-space: nowrap;
+	padding: 0px 20px;
+	height: 28px;
+	overflow:hidden;
+}
+#navMenu a
+{
+   float:left;
+	overflow:hidden;
+	color:#000000;
+	text-decoration: none;
+   padding-left:5px;
+   background: url('../images/menu_top_line.png') no-repeat top right;
+	height: 30px;
+}
+#navMenu a span{
+   float:left;
+   cursor:pointer;
+	padding: 6px 5px 6px 5px;
+}
+#navMenu a.active, #navMenu a:hover
+{
+	color:#FFFFFF;
+   font-weight:bold;
+   background: url('../images/menu_top_hover_l.png') no-repeat top left;
+}
+#navMenu a.active span, #navMenu a:hover span
+{
+	height: 28px;
+   background: url('../images/menu_top_hover_r.png') no-repeat top right;
+}
+#navMenu a span span.close, #navMenu a span span.over{
+   height:16px;
+   width:16px;
+   float:right;
+   margin-left:10px;
+   cursor:pointer;
+	padding: 0px;
+	background:url('../images/close_square.png') no-repeat center center;
+}
+
+#navMenu a.active span span.close, #navMenu a:hover span span.close{
+   height:16px;
+   background:url('../images/close_square_over.png') no-repeat center center;
+}
+
+.page,.iconTip{padding:12px 10px;}
+.page-link a{margin:0 8px 0 8px;}

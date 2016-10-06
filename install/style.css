@@ -1,0 +1,14 @@
+body {background:#f8f8f8;font-size:14px;margin:20px auto;text-align:center;font-family:'Verdana','ËÎÌו';line-height:150%;}
+form {margin:0;padding:0;}
+li {list-style:none;margin:3px 0;}
+.input {padding:4px 5px;height:30px;width:200px;border:1px solid;font-weight:bold;border-color:#999 #999 #999 #999;}
+.button {padding:5px 10px;}
+.textarea {padding:0 5px;font-size:12px;line-height:150%;border:1px solid;border-color:#ccc #f0f0f0 #f0f0f0 #ccc;height:300px;width:98%;}
+
+#wrap {width:600px;border:3px solid #f0f0f0;margin:0 auto;}
+.main {width:100%;background:#fff;}
+.main caption {font-weight:bold;color:#fff;background:#466ba0;line-height:50px}
+.main th, .main td {padding:5px;}
+.main th {text-align:left;padding:15px 5px;}
+.main td {font-size:12px;}
+#copyright {width:100%;text-align:center;font-size:12px;margin:5px;}
